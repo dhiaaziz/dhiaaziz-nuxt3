@@ -31,10 +31,10 @@ const links = [
 
     <div class="bg-gradient-to-r from-gray-900 to-teal-900 background-animate h-screen flex items-center justify-center flex-col">
       <div>
-        <h1 class="tracking-widest mb-3 text-2xl">{{ title }}</h1>
+        <h1 class="tracking-widest mb-3 text-2xl text-gray-200">{{ title }}</h1>
       </div>
       <div>
-        <a v-for="link in links" :href="link.url" target="_blank" class="btn btn-sm hover:text-teal-600 hover:border-teal-600 mx-2 bg-zinc-900"><span class="mr-1" v-if="link.icon" v-html="link.icon"></span>{{ link.text }}</a>
+        <a v-for="link in links" :href="link.url" target="_blank" class="btn btn-sm hover:text-teal-600 hover:border-teal-600 mx-2 hover:bg-zinc-900 bg-zinc-900"><span class="mr-1" v-if="link.icon" v-html="link.icon"></span>{{ link.text }}</a>
       </div>
     </div>
   </div>
